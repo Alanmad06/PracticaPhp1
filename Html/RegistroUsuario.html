@@ -1,0 +1,80 @@
+
+<!-- Formulario html para el registro de un usuario -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style >
+        body{
+
+            background-color: salmon;
+
+
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container my-5"> 
+
+    <div class="row">
+     
+        <div class="col-md-12">
+    <form action="../Php/VerificacionDatosRegistro.php" method="post">
+        <h1>Registro de usuario</h1>
+        <p>Nombre de usuario: <input class="form-control" type="text" name="nombre_usuario" ></p>
+        <p>Nombre completo: <input class="form-control" type="text" name="nombre_completo" ></p>
+        <p>Contraseña: <input class="form-control" type="password" name="contrasena" ></p>
+        <p>Repetir contraseña: <input class="form-control" type="password" name="repetir_contrasena" ></p>
+        <p>Correo electrónico: <input class="form-control" type="email" name="correo_electronico" ></p>
+        </div>
+        <div class="col-md-6">
+        <p>Sexo: 
+            <input class="form-control" type="radio" name="sexo" value="Masculino" >Masculino
+            <input class="form-control" type="radio" name="sexo" value="Femenino">Femenino
+            <input class="form-control" type="radio" name="sexo" value="Otro">Otro
+        </p>
+        </div>
+
+        <div class="col-md-6">
+        <p>Hobbies: 
+            <input class="form-control" type="checkbox" name="hobbies[]" value="Deporte">Deporte
+            <input class="form-control" type="checkbox" name="hobbies[]" value="Lectura">Lectura
+            <input class="form-control" type="checkbox" name="hobbies[]" value="Música">Música
+            <input class="form-control" type="checkbox" name="hobbies[]" value="Cine">Cine
+            <input class="form-control" type="checkbox" name="hobbies[]" value="Viajar">Viajar
+        </p>
+        </div>
+        <div class="col-md-12">
+        <p>Estado civil: 
+            <select  class="custom-select" name="estado_civil">
+                <option value="">Selecciona una opción</option>
+                <option value="Soltero/a">Soltero/a</option>
+                <option value="Casado/a">Casado/a</option>
+                <option value="Divorciado/a">Divorciado/a</option>
+                <option value="Viudo/a">Viudo/a</option>
+            </select>
+        </p>
+        <p>Calle: <input class="form-control" type="text" name="calle"></p>
+        <p>Número interior: <input  class="form-control" type="number" name="numero_interior"></p>
+        <p>Colonia: <input  class="form-control"type="text" name="colonia"></p>
+        <p>Estado: <input class="form-control" type="text" name="estado"></p>
+        <p>País: <input  class="form-control"type= "text" name= "pais"></p>
+        <p>CP: <input  class="form-control"type= "number" name= "cp"></p>
+        <p><button class="btn btn-primary">Enviar</button> </p>
+        </div> 
+    </form>
+     </div>
+     
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
